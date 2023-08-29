@@ -7,12 +7,12 @@ export function solveMultiples(num) {
   const three = 3;
   const five = 5;
 
-  const num1Array = [];
+  let num1Array = 0;
   for (let i = 1; i <= num; i++) {
     if (i % three === 0) {
-      num1Array.push(i);
+      num1Array += i;
     } else if (i % five === 0) {
-      num1Array.push(i);
+      num1Array += i;
     }
   }
   return num1Array;
