@@ -7,14 +7,19 @@ describe('solveMultiples', () => {
   //   expect(answer).toEqual(0);
   // });
 
-  test('should return an array of the numbers 1 to 9', () => {
-    const answer = solveMultiples(9);
-    expect(answer).toEqual([1,2,3,4,5,6,7,8,9]);
-  });
+  // test('should return an array of the numbers 1 to 9', () => {
+  //   const answer = solveMultiples(9);
+  //   expect(answer).toEqual([1,2,3,4,5,6,7,8,9]);
+  // });
 
-  test('should return an array of numbers divisible by three', () => {
+  // test('should return an array of numbers divisible by three or five', () => {
+  //   const answer = solveMultiples(9);
+  //   expect(answer).toEqual([3,5,6,9]);
+  // });
+
+  test('should return the sum of numbers divisible by three or five, below 9', () => {
     const answer = solveMultiples(9);
-    expect(answer).toEqual([3,6,9]);
+    expect(answer).toEqual(23);
   });
 
 });
